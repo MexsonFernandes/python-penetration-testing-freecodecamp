@@ -29,15 +29,12 @@ def scan(s_methods, s_type):
     print("Protocols: ", scanner[ip].all_protocols())
     print("Open Ports: ", scanner[ip][s_type].keys())
 
-def scan(s_type, ):
-
-
 if res == '1':
     scan('-v sS','tcp')
 elif res == '2':
     scan('-v sU', 'udp')
 elif res == '3':
-    comprehensive('-v -sS -sV -sC -A -O', 'tcp')
+    scan('-v -sS -sV -sC -A -O', 'tcp')
 else:
     print('Wrong selection!')
 
